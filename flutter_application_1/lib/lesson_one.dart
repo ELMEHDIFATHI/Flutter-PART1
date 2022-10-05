@@ -21,9 +21,30 @@ class LessonOne extends StatelessWidget {
             ],
           ),
           body: Container(
-            color: Colors.blue,
-            child: Text("Body"),
-          )),
+              alignment: Alignment.center,
+              color: Colors.blue,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    "hello worl",
+                    style: TextStyle(
+                        color: Colors.red,
+                        //backgroundColor: Color.fromARGB(110, 66, 88, 105),
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic,
+                        wordSpacing: 10,
+                        letterSpacing: 20,
+                        shadows: <Shadow>[
+                          Shadow(
+                              offset: Offset(0.0, 9.0),
+                              blurRadius: 3,
+                              color: Colors.black)
+                        ]),
+                  ),
+                ],
+              ))),
     );
   }
 }
